@@ -17,31 +17,31 @@ source ~/miniforge3/bin/activate
 conda create --name tensorflow python=3.9
 conda activate tensorflow
 ```
-7. Install TensorFlow dependencies from Apple Conda channel.
+6. Install TensorFlow dependencies from Apple Conda channel.
 ```bash
 conda install -c apple tensorflow-deps
 ```
-8. Install base TensorFlow (Apple's fork of TensorFlow is called `tensorflow-macos`).
+7. Install base TensorFlow (Apple's fork of TensorFlow is called `tensorflow-macos`).
 ```bash
 python -m pip install tensorflow-macos
 ```
-9. Install Apple's `tensorflow-metal` to leverage Apple Metal (Apple's GPU framework) for M1, M1 Pro, M1 Max GPU acceleration.
+8. Install Apple's `tensorflow-metal` to leverage Apple Metal (Apple's GPU framework) for M1, M1 Pro, M1 Max GPU acceleration.
 ```bash
 python -m pip install tensorflow-metal
 ```
-10. (Optional) Install TensorFlow Datasets to run benchmarks included in this repo.
+9. (Optional) Install TensorFlow Datasets to run benchmarks included in this repo.
 ```bash
 python -m pip install tensorflow-datasets
 ```
-11. Install common data science packages.
+10. Install common data science packages.
 ```bash
 conda install jupyter pandas numpy matplotlib scikit-learn
 ```
-12. Start Jupyter Notebook.
+11. Start Jupyter Notebook.
 ```bash
 jupyter notebook
 ```
-13. Import dependencies and check TensorFlow version/GPU access.
+12. Import dependencies and check TensorFlow version/GPU access.
 ```python
 import numpy as np
 import pandas as pd
