@@ -10,16 +10,12 @@ chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
 sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
 source ~/miniforge3/bin/activate
 ```
-4. Restart terminal.
-5. Create a directory to setup TensorFlow environment.
+4. Restart terminal. 
+
+5. Make and activate Conda environment. **Note:** Python 3.9 is the most stable for using the following setup.
 ```bash
-mkdir tensorflow-test
-cd tensorflow-test
-```
-6. Make and activate Conda environment. **Note:** Python 3.8 is the most stable for using the following setup.
-```bash
-conda create --prefix ./env python=3.8
-conda activate ./env
+conda create --name tensorflow python=3.9
+conda activate tensorflow
 ```
 7. Install TensorFlow dependencies from Apple Conda channel.
 ```bash
